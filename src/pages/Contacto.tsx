@@ -10,7 +10,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Card } from "@/components/ui/card";
 import { toast } from "sonner";
-import { Mail, Phone, MapPin, Clock, MessageSquare } from "lucide-react";
+import { Mail, Phone, Clock, MessageSquare } from "lucide-react";
 
 const contactSchema = z.object({
   nombre: z.string().trim().min(2, "El nombre debe tener al menos 2 caracteres").max(100),
@@ -298,19 +298,6 @@ const Contacto = () => {
                   </div>
                 </Card>
 
-                <Card className="p-6 rounded-2xl shadow-card">
-                  <h3 className="text-xl font-heading font-semibold mb-4">Ubicación</h3>
-                  <div className="flex items-start space-x-3 mb-4">
-                    <MapPin className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" aria-hidden="true" />
-                    <p className="text-sm text-muted-foreground">
-                      Santiago, Chile<br />
-                      Región Metropolitana
-                    </p>
-                  </div>
-                  <div className="h-48 bg-muted rounded-lg flex items-center justify-center">
-                    <p className="text-sm text-muted-foreground italic">Mapa de ubicación</p>
-                  </div>
-                </Card>
               </div>
             </div>
           </div>

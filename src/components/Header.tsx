@@ -19,7 +19,6 @@ const Header = () => {
   const navItems = [
     { label: "Home", path: "/" },
     { label: "Nosotros", path: "/nosotros" },
-    { label: "Noticias", path: "/noticias" },
     { label: "Contacto", path: "/contacto" },
   ];
 

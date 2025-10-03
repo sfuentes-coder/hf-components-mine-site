@@ -9,9 +9,7 @@ import {
   Shield, 
   Users, 
   MapPin,
-  Clock,
-  CheckCircle2,
-  TrendingUp
+  CheckCircle2
 } from "lucide-react";
 import heroImage from "@/assets/hero-mining.jpg";
 import componentsImage from "@/assets/components-parts.jpg";
@@ -46,11 +44,6 @@ const Index = () => {
     },
   ];
 
-  const kpis = [
-    { label: "SLA de Entrega", value: "98%", icon: <Clock className="w-5 h-5" aria-hidden="true" /> },
-    { label: "Fill Rate", value: "95%", icon: <CheckCircle2 className="w-5 h-5" aria-hidden="true" /> },
-    { label: "Tiempo Respuesta", value: "< 2h", icon: <TrendingUp className="w-5 h-5" aria-hidden="true" /> },
-  ];
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -178,51 +171,6 @@ const Index = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* KPIs Section */}
-        <section className="py-16 md:py-24 bg-secondary text-secondary-foreground">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Confianza Respaldada por Resultados</h2>
-              <p className="text-lg text-secondary-foreground/90 max-w-2xl mx-auto">
-                Métricas que demuestran nuestro compromiso con la excelencia operacional
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-              {kpis.map((kpi, index) => (
-                <Card key={index} className="p-8 rounded-2xl text-center bg-card text-card-foreground">
-                  <div className="flex justify-center mb-4 text-secondary">
-                    {kpi.icon}
-                  </div>
-                  <p className="text-4xl font-heading font-bold mb-2 text-secondary">{kpi.value}</p>
-                  <p className="text-sm text-muted-foreground">{kpi.label}</p>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Testimonial Section */}
-        <section className="py-16 md:py-24 bg-background">
-          <div className="container mx-auto px-4">
-            <Card className="max-w-4xl mx-auto p-8 md:p-12 rounded-2xl shadow-card border-l-4 border-l-primary">
-              <blockquote>
-                <p className="text-xl md:text-2xl font-medium text-foreground mb-6 leading-relaxed italic">
-                  "HF Components nos ha permitido reducir tiempos muertos críticos en nuestra flota minera."
-                </p>
-                <footer className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center">
-                    <Users className="w-6 h-6 text-muted-foreground" aria-hidden="true" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">Cliente Satisfecho</p>
-                    <p className="text-sm text-muted-foreground">Operación Minera, Región de Antofagasta</p>
-                  </div>
-                </footer>
-              </blockquote>
-            </Card>
           </div>
         </section>
 

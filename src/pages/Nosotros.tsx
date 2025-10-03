@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
-import { Shield, Heart, Zap, Award, MapPin, Users } from "lucide-react";
+import { Shield, Heart, Zap, Users } from "lucide-react";
 
 const Nosotros = () => {
   const values = [
@@ -22,13 +22,6 @@ const Nosotros = () => {
     }
   ];
 
-  const milestones = [
-    { year: "2015", event: "Fundación de HF Components" },
-    { year: "2017", event: "Expansión a regiones del norte minero" },
-    { year: "2019", event: "Certificación ISO 9001" },
-    { year: "2021", event: "Alianzas estratégicas con marcas líderes" },
-    { year: "2023", event: "Cobertura nacional consolidada" },
-  ];
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -45,44 +38,6 @@ const Nosotros = () => {
               <p className="text-lg text-secondary-foreground/90 leading-relaxed">
                 Somos el socio estratégico que las operaciones mineras necesitan para mantener su producción sin interrupciones.
               </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Cobertura Section */}
-        <section className="py-16 md:py-24 bg-background">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <div className="flex items-center space-x-3 mb-6">
-                  <MapPin className="w-8 h-8 text-primary" aria-hidden="true" />
-                  <h2 className="text-3xl md:text-4xl font-heading font-bold">Cobertura Nacional</h2>
-                </div>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  Operamos a nivel nacional, desde el norte minero hasta la zona central, con tiempos de entrega competitivos que aseguran la continuidad de tus operaciones.
-                </p>
-                <div className="space-y-4">
-                  <div className="p-4 bg-muted rounded-lg">
-                    <p className="font-semibold text-foreground mb-1">Región de Tarapacá</p>
-                    <p className="text-sm text-muted-foreground">Cobertura en principales faenas mineras</p>
-                  </div>
-                  <div className="p-4 bg-muted rounded-lg">
-                    <p className="font-semibold text-foreground mb-1">Región de Antofagasta</p>
-                    <p className="text-sm text-muted-foreground">Hub logístico principal</p>
-                  </div>
-                  <div className="p-4 bg-muted rounded-lg">
-                    <p className="font-semibold text-foreground mb-1">Región de Atacama</p>
-                    <p className="text-sm text-muted-foreground">Entrega express disponible</p>
-                  </div>
-                  <div className="p-4 bg-muted rounded-lg">
-                    <p className="font-semibold text-foreground mb-1">Zona Central</p>
-                    <p className="text-sm text-muted-foreground">Oficinas y almacén estratégico</p>
-                  </div>
-                </div>
-              </div>
-              <div className="h-96 bg-muted rounded-2xl flex items-center justify-center">
-                <p className="text-muted-foreground italic">Mapa de cobertura Chile</p>
-              </div>
             </div>
           </div>
         </section>
@@ -106,52 +61,6 @@ const Nosotros = () => {
                   <p className="text-muted-foreground leading-relaxed">{value.description}</p>
                 </Card>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Historia Section */}
-        <section className="py-16 md:py-24 bg-background">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-12 text-center">Nuestra Historia</h2>
-              <div className="space-y-6">
-                {milestones.map((milestone, index) => (
-                  <div key={index} className="flex items-start space-x-6">
-                    <div className="flex-shrink-0 w-20 h-20 bg-primary rounded-lg flex items-center justify-center">
-                      <span className="text-2xl font-heading font-bold text-primary-foreground">{milestone.year}</span>
-                    </div>
-                    <div className="flex-1 pt-4">
-                      <p className="text-lg font-medium text-foreground">{milestone.event}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Certificaciones Section */}
-        <section className="py-16 md:py-24 bg-muted">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <div className="flex justify-center mb-6">
-                <Award className="w-12 h-12 text-secondary" aria-hidden="true" />
-              </div>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">Certificaciones & Calidad</h2>
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Cumplimos con los más altos estándares internacionales de calidad y gestión, asegurando la excelencia en cada proceso.
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Card className="p-8 rounded-2xl shadow-card">
-                  <h3 className="text-xl font-heading font-semibold mb-2">ISO 9001:2015</h3>
-                  <p className="text-muted-foreground">Sistema de Gestión de Calidad certificado</p>
-                </Card>
-                <Card className="p-8 rounded-2xl shadow-card">
-                  <h3 className="text-xl font-heading font-semibold mb-2">Control de Calidad</h3>
-                  <p className="text-muted-foreground">Verificación rigurosa de cada componente</p>
-                </Card>
-              </div>
             </div>
           </div>
         </section>
