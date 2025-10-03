@@ -170,7 +170,7 @@ const Index = () => {
                     <p className="font-medium text-foreground">Extracción</p>
                   </div>
                   <div className="p-4 bg-muted rounded-lg">
-                    <p className="font-medium text-foreground">Acarreo</p>
+                    <p className="font-medium text-foreground">Transporte</p>
                   </div>
                   <div className="p-4 bg-muted rounded-lg">
                     <p className="font-medium text-foreground">Chancado</p>

@@ -105,7 +105,7 @@ const Footer = () => {
         <div className="pt-6 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
             <p className="text-xs text-gray-500">
-              © {currentYear} HF Components SpA. Todos los derechos reservados. RUT: XX.XXX.XXX-X
+              © {currentYear} HF Components SpA. Todos los derechos reservados.
             </p>
             <p className="text-xs text-gray-500">
               Desarrollado con tecnología Lovable
